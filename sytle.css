@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  font-family: 'Hammersmith One', sans-serif;
+  
+  /* variables */
+  --black-color: rgb(0, 0, 0);
+  --black-gray: rgba(0, 0, 0, .5);
+  --blue-color: #1C6DD0;
+  --back-color: #FFF8F3;
+  --white-color: #ffffff;
+}
+
+
+/* general CSS */
+.container {
+  margin: auto;
+  padding: 0 3rem;
+}
+
+/* navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding-top: 7rem;
+}
+
+.logo {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.burger-menu {
+  /* don't show menu button in large screens */
+  display: none;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--black-gray);
+  margin-left: 1rem;
+  font-size: ;
+}
