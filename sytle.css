@@ -5,7 +5,8 @@
   /* variables */
   /* colors */
   --black-color: rgb(0, 0, 0);
-  --gray-color: rgba(0, 0, 0, 0.05);
+  --gray-color: rgba(0, 0, 0, 0.5);
+  --buble-color: rgba(0, 0, 0, 0.05);
   --blue-color: #1c6dd0;
   --back-color: #fff8f3;
   --white-color: #ffffff;
@@ -13,11 +14,21 @@
   --font-primary: "Hammersmith One", sans-serif;
   --font-secondary: "Inconsolata", monospace;
 }
+body {
+  background-color: var(--back-color);
+}
 
 /* general CSS */
 .container {
   margin: auto;
   padding: 0 3rem;
+  max-width: 1200px;
+}
+
+.section-header {
+  font-size: 2.7rem;
+  font-weight: lighter;
+  padding: 3rem 0 2rem;
 }
 
 /* navigation */
@@ -25,7 +36,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   padding-top: 4rem;
 }
 
@@ -52,7 +62,7 @@
 
 .navigation a {
   text-decoration: none;
-  color: var(--black-gray);
+  color: var(--gray-color);
   margin-left: 3rem;
   font-size: 1.3rem;
 }
@@ -96,7 +106,7 @@
 
 /* hero sectoin background */
 .circles {
-  background-color: var(--gray-color);
+  background-color: var(--buble-color);
   height: 15rem;
   width: 15rem;
   border-radius: 100%;
@@ -105,12 +115,32 @@
 }
 
 .circle1 {
-    top: 5rem;
-    right: 30rem;
+  top: 5rem;
+  right: 30rem;
 }
 .circle2 {
-    top: 8rem;
-    left: 25rem;
+  top: 8rem;
+  left: 25rem;
 }
 .circle3 {
+}
+
+/* about section  */
+.about-section {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding-bottom: 4rem;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+}
+.about-image {
+  width: 17rem;
+  border-radius: 100%;
+}
+.about-paragraph {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
