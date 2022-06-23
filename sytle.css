@@ -16,6 +16,7 @@
 }
 body {
   background-color: var(--back-color);
+  font-size: 1.5rem;
 }
 
 /* general CSS */
@@ -29,6 +30,10 @@ body {
   font-size: 2.7rem;
   font-weight: lighter;
   padding: 3rem 0 2rem;
+}
+
+.gray {
+  color: var(--gray-color);
 }
 
 /* navigation */
@@ -141,6 +146,42 @@ body {
 }
 .about-paragraph {
   margin-left: 4rem;
-  font-size: 1.5rem;
   font-weight: lighter;
+}
+
+/* skills section */
+/* skills card container */
+.skills-card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+/* card */
+.skill-card {
+  background: var(--white-color);
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 1.3rem;
+  box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.1), -7px -7px 15px rgb(255, 255, 255);
+}
+.card-text {
+  line-height: 3rem;
+}
+
+/* skills progress */
+.skills-progress-background {
+  margin-top: 2rem;
+  height: 1.7rem;
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  box-shadow: inset -5px 6px 13px rgba(0, 0, 0, 0.1);
+}
+/* skills progress foreground */
+.skills-progress-foreground {
+  height: inherit;
+  border-radius: inherit;
+  background-color: var(--blue-color);
+  box-shadow: inset 5px -6px 13px rgba(0, 0, 0, 0.4);
 }
