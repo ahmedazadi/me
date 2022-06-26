@@ -1,0 +1,95 @@
+/* mobiles */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  /* general css */
+  .section-header {
+    font-size: 2rem;
+  }
+
+  .nav {
+    /* background-color: greenyellow; */
+    padding: 1rem;
+  }
+
+  /* hero section */
+  .title {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  /* skills section */
+  .skill-card-text {
+    line-height: 2rem;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 800px) {
+  /* general css  */
+  .container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* background-color: red; */
+    box-sizing: border-box;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .circles {
+    display: none;
+  }
+
+  /* navigation */
+  .burger-menu {
+    display: block;
+    z-index: 1;
+  }
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: 5px;
+    /* background-color: red; */
+    min-width: 30rem;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 35%;
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    margin: 0;
+    background-color: blue;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+
+  /* hero section */
+  .hero-section {
+    height: fit-content;
+  }
+
+  /* about section */
+  .about-container {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 13rem;
+    margin-bottom: 2rem;
+  }
+  .about-paragraph {
+    /* background-color: magenta; */
+    margin: 0;
+  }
+}

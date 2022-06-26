@@ -22,18 +22,35 @@ body {
 /* general CSS */
 .container {
   margin: auto;
-  padding: 0 3rem;
+  padding: 3rem 3rem 4rem;
   max-width: 1200px;
 }
 
 .section-header {
   font-size: 2.7rem;
   font-weight: lighter;
-  padding: 3rem 0 2rem;
+  /* padding: 3rem 0 2rem; */
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .gray {
   color: var(--gray-color);
+}
+
+/* buttons */
+.harsh-shadow {
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+.harsh-shadow:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* navigation */
@@ -42,6 +59,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
+  position: sticky;
 }
 
 .logo {
@@ -76,6 +94,8 @@ body {
   color: black;
 }
 
+/* ------------------------------------------------- */
+
 /* hero section */
 .hero-section {
   text-align: center;
@@ -96,14 +116,15 @@ body {
 }
 .hero-button {
   text-decoration: none;
-  border: solid 1px #1c6dd0;
+  border: solid 1px var(--blue-color);
   border-radius: 2rem;
   padding: 15px 30px;
   margin: 1rem;
   font-size: 1.3rem;
+  display: inline-block;
 }
 
-/* left side button (blue) saperately*/
+/* left button (blue) saperately*/
 .contact-button {
   background: var(--blue-color);
   color: var(--white-color);
@@ -130,11 +151,12 @@ body {
 .circle3 {
 }
 
+/* ------------------------------------------------- */
+
 /* about section  */
 .about-section {
   background-color: var(--blue-color);
   color: var(--white-color);
-  padding-bottom: 4rem;
 }
 .about-container {
   display: flex;
@@ -149,24 +171,19 @@ body {
   font-weight: lighter;
 }
 
+/* ------------------------------------------------- */
+
 /* skills section */
-/* skills card container */
-.skills-card-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 2rem;
-  column-gap: 2rem;
-}
 
 /* card */
 .skill-card {
-  background: var(--white-color);
+  /* background: var(--white-color); */
   height: fit-content;
   padding: 2rem;
   border-radius: 1.3rem;
   box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.1), -7px -7px 15px rgb(255, 255, 255);
 }
-.card-text {
+.skill-card-text {
   line-height: 3rem;
 }
 
@@ -184,4 +201,74 @@ body {
   border-radius: inherit;
   background-color: var(--blue-color);
   box-shadow: inset 5px -6px 13px rgba(0, 0, 0, 0.4);
+}
+
+/* ------------------------------------------------- */
+
+/* projects section */
+
+.projects-section {
+  background-color: #2aa0c6;
+  color: var(--white-color);
+}
+
+/* projects-card */
+.project-card {
+  background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+  max-height: fit-content;
+  color: var(--black-color);
+}
+.project-card-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  height: 10rem;
+}
+.card-text-column {
+  margin: 1rem;
+}
+.card-paragraph {
+  font-size: 1rem;
+}
+
+.project-tools-container {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+.project-tool {
+  display: inline-block;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+/* contact section */
+.contact-container {
+  width: fit-content;
+  margin: auto;
+  padding: 5rem 0;
+  font-size: 1.3rem;
+  /* background-color: red; */
+}
+.contact-link {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--gray-color);
+}
+
+.contact-icon {
+  display: inline;
+}
+.contact-text {
+  display: inline;
 }
