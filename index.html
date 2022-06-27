@@ -7,8 +7,9 @@
     <title>Ahmed Azad</title>
 
     <!-- my css -->
-    <link rel="stylesheet" href="sytle.css" />
-    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="stylesheet" href="css/sytle.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+    <link rel="stylesheet" href="css/animation.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +26,9 @@
     />
   </head>
   <body>
+    <div class="start">
+      <h1>Ahmed Azad</h1>
+    </div>
     <!-- navigation bar -->
     <div class="nav-background"></div>
     <nav class="nav container">
@@ -84,11 +88,13 @@
 
         <!-- CTA buttons -->
         <div class="hero-buttons">
-          <a class="hero-button contact-button harsh-shadow" href="#Contact"
+          <a class="hero-button contact-button harsh-shadow" href="#contact"
             >Contact Me</a
           >
-          <a class="hero-button work-button harsh-shadow" href="#Projects"
-            >My Work</a
+          <a
+            class="hero-button work-button harsh-shadow"
+            href="https://github.com/ahmedazadi"
+            >GitHub</a
           >
         </div>
 
@@ -174,68 +180,78 @@
 
         <div class="grid-container">
           <!-- card -->
-          <a class="project-card harsh-shadow">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1655432960599-931eeab4c735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-              "
-            ></div>
-            <div class="card-text-column">
-              <p>card text</p>
-              <p class="card-paragraph">
-                lurem ipso nsadlkf jaslkd jfklsadjfl kaj dsf;lkasjdf
-              </p>
+          <a
+            href="projects/KurdishTypingTest.html"
+            class="project-card harsh-shadow"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/m3I6njzGJWJxoDGOyG5k5dlXA9uguf8a0LSVx8SpPpnW2z7fvxwHVsUmiLj0pxat3ZJG6Hsu-Ylk6MVz5nDyA5VpH5FWcZkDusRrdDEm3xMdj2Scd56yY3UvMCCLkcP0PnpHW2LBUO5pUkT9oldRiDnb5vUOViHsj1WREU2GIT71gOz73D6zTEnjTusytk5bDA49L_zcICJR9k-d1yAyDZiHO3UUVTcq_QCCCFSy25J2LmCWJmORynjWzlmr1ned8kIMAvzLej1aP0W4KDvu1rFrC5BOiHAdikwcGcQYZ3DxcpSC9z5wsYr5ho1rqjJrnwBwQjzkLKssXLH7dE930Vk9ib09oDyLAeFjpHWyHb5-4xitykoYCiSntAy3Z7gfVWj-wbjMaRl-Jv0UhpiaHW4GJmMtpdKhgIXlIWlIsqKuyUckJPljPR9dLYLmU_P9FydhGOywIkr0Rzltmoys8zxSu03BrBUnuQo9V7XqyfcqHYYS-bxmgrK9Jcd8IcHwhALGPj-fsmVENpWyRViBDcHMdchHw7PjIfAyE9PhUkC_wyXkv1GBH93FGTxrOV7dkn2O0q7pDa_tbCU7JxUFNVGTbVOnrNlz269tM__1fVLBYdOEbgNUYnbHVO9TGWRIIdXUXbaFR2JEG4uULizAbVtBkzlDtlsc4Iq5q5NlDvGHQ9Ei9HgZTVxoR_QUgclNLwI1qpAD2O_-hKfhf6MFFgozvSxdp-1BnDn9NX00OKBxRoPZu0V0jR8ejIpwdA=w391-h220-no?authuser=0');
+            "
+          >
+            <p class="card-title">Kurdish Typing Test</p>
+            <p class="card-paragraph">
+              Website for testing your typing speed in Kurdish(Badini) language
+            </p>
+            <div class="project-tools-container">
+              <div class="project-tool">HTML</div>
+              <div class="project-tool">CSS</div>
+              <div class="project-tool">JavaScript</div>
+              <div class="project-tool">PHP</div>
+              <div class="project-tool">MySql</div>
+            </div>
+          </a>
+
+          <!-- card -->
+          <a
+            href="projects/DominoCounter.html"
+            class="project-card harsh-shadow"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/N0CXglnCUD2w8OdraCxLU4U_H3hLDsjVmvMqFTmg8pT1J-Fj8QyiSitruHuoDiOWJr9DkZX7mGtBtiQJZ73EgGY_OewMbsSVObYPWD_-NGijZ1cVS2ERH6G3pECjCV6E1JxmPfWMp02dZM8O8NfC3bNIrBHRl_bKFbf_H9DGjCyv8mlLCSnqdZQyTK3ZneuHiDP-x10Y64DuxCRMy6ikY-x8-2uEQ18651mY9mQepgn-uGManTeVm79Td4dPzSKoovTIDvhJAEQ0u75Z01T1v08LsTFUdcqcj7Bm-OrdvrLzpPYabEl0FsMu9FKKxp4BCwOfdHrXfK4bNaJC57bU9AkTevLZemP1y0wbdgkgG7dHuW5qov0BrKiapWCdtMgDYOsBoF6w4g4LCw6YYLBER5vgswaE9DskA1nD3QVdqWShTBbcVeLvjr6KO1TvNrQQYMK1fT6AOf0661XcTPdUwjSSX0GSF2vCMQyypvRbXHrFC4kjiAX8jhtcDAcbsX7CCcrG_q_2j6_klU5u_yuz2tPLGHEgJpdMDeiml8Sr5SQsLxmZ9ehvN_jIJLaM0UPqTivZsb54OKTkCnueNgpQO1YpvE2rOoN5Rckr8gmQ9lpLsETOoG348POUUiF6O30JjAvQ8DOiPKijX-PYIQVuhqjAj5Mv17AEprnNx81fNhtaH_-rZaQKWqyQStsB9Td8bI0k8nDFGOXljKYIsTQnUiMTfOvBxe-A4ovTEU7VfQOiOKAWpBD_ac1mKl_6Nw=w471-h838-no?authuser=0');
+            "
+          >
+            <p class="card-title">DominoCounter</p>
+            <p class="card-paragraph">
+              Website for mobiles that allows users to calculate Domino Game
+              points easily.
+            </p>
+            <div class="project-tools-container">
+              <div class="project-tool">HTML</div>
+              <div class="project-tool">CSS</div>
+              <div class="project-tool">JavaScript</div>
             </div>
           </a>
           <!-- card -->
-          <a class="project-card harsh-shadow">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1655432960599-931eeab4c735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-              "
-            ></div>
-            <div class="card-text-column">
-              <p>card text</p>
-              <p class="card-paragraph">
-                lurem ips ons adlkfj aslkdjf klsadjflka jds f;lkas jdf
-              </p>
+          <a
+            href="projects/QuizGame.html"
+            class="project-card harsh-shadow"
+            style=""
+          >
+            <p class="card-title">QuizGame (windows application)</p>
+            <p class="card-paragraph">
+              Windows form application that lets you test yourself about
+              different subjects and stores data in a database.
+            </p>
+            <div class="project-tools-container">
+              <div class="project-tool">C#</div>
+              <div class="project-tool">Microsoft SQL server</div>
             </div>
           </a>
           <!-- card -->
-          <a class="project-card harsh-shadow">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1655432960599-931eeab4c735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-              "
-            ></div>
-            <div class="card-text-column">
-              <p>card text</p>
-              <p class="card-paragraph">
-                lurem ips ons adlkfj aslkdjf klsadjflka jds f;lkas jdf
-              </p>
-            </div>
-          </a>
-          <!-- card -->
-          <a class="project-card harsh-shadow">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url('https://images.unsplash.com/photo-1655432960599-931eeab4c735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-              "
-            ></div>
-            <div class="card-text-column">
-              <p>card text</p>
-              <p class="card-paragraph">
-                lurem ips ons adlkfj aslkdjf klsadjflka jds f;lkas jdf
-              </p>
-              <div class="project-tools-container">
-                <span class="project-tool">HTML</span>
-                <span class="project-tool">CSS</span>
-                <span class="project-tool">JavaScript</span>
-              </div>
+          <a
+            href="projects/Tindog.html"
+            class="project-card harsh-shadow"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/YO3KiuFWw-pDuIJzXWpyNnGT3D4zUohYQHTY4fWcs0GUcV_MP3unMnNGuWmmfxX_ETsiCzYyvkf2sTGqYDFZ9xpvBQ1PKsa8ZXrsAAyPh_gv4zmEiLVvyEvK97Wna2NGhzWWU3yUrcRDzpdSngo69hrZGWfwc2aMecUYmFKyaX_nueN9m4_2-DHl27pBEAudfs5BNN88ybcgZwUzSK6jsthnHN_prD53c4uYZ5ZxZGRKmqhawrz6xYYZON1w9bdPs77MpteomEmOtQ6cPhhgJwHb4oIZXHai4bdemmC8_1Smq_qX6ZSwMSgJaxos8PKbRXjpIqF3j1aZZB1mXuoLyhPvaimuNwEXuFbqBvYFzCcA4FBPTJOx0LprZ_7KBY54OolLgBsesrR8UepgG_R_RN57W44bgEh5LTmy-N0uCfdEgqJc0TBRyuBOqTTGggwE844R7CJUrQtoxKHWxJ8udIWdr7ckNYpxERv128zrX6vIlXVplddxIpJ3bJtFMRQdFkLfx-mZUY01GWrZma77hvccNtgZqLYBq8Z-LIX7XTS3DYfMVjUYdNlBAQWzwmq1mfR5brpYjE2ORHkm-rfqgavI35yz9wmDDBt59p_jr6REDuiCdAYHcWMiUvFgssjrrFaW_-x6vhEyfK3cRexrwfSolNP2E5G0tfeCVg0CNVVknOGLwfVO7AHzNDpvhwuBiKVL_-aSxv_DIirRO0wPyjnaEJs5Tp2RBeFyc3HbEqxN63KLK7krJPgMN-Uh9g=w391-h220-no?authuser=0');
+            "
+          >
+            <p class="card-title">TinDog</p>
+            <p class="card-paragraph">
+              Static website for an imaginary mobile application named TinDog, I
+              developed it following my Web Development bootcamp
+            </p>
+            <div class="project-tools-container">
+              <div class="project-tool">HTML</div>
+              <div class="project-tool">CSS</div>
+              <div class="project-tool">Bootstrap</div>
             </div>
           </a>
           <!-- end -->
@@ -270,28 +286,6 @@
               />
             </svg>
             <div class="contact-text">ahmedazad750@gmail.com</div>
-          </a>
-
-          <!-- contact 1 -->
-          <a
-            class="contact-link"
-            href="https://github.com/ahmedazadi"
-            target="_blank"
-          >
-            <!-- GitHub icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
-            <div class="contact-text">AhmedAzadi</div>
           </a>
 
           <!-- contact 2 -->
@@ -336,10 +330,31 @@
             </svg>
             <div class="contact-text">Ahmed Azad</div>
           </a>
+          <a
+            class="contact-link"
+            href="https://twitter.com/ahmedazad0"
+            target="_blank"
+          >
+            <!-- twitter icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
+            </svg>
+            <div class="contact-text">Ahmed Azad</div>
+          </a>
         </div>
       </div>
     </section>
 
-    <script src="navBar.js"></script>
+    <script src="javascript/navBar.js"></script>
+    <script src="startPage.js"></script>
   </body>
 </html>

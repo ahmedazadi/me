@@ -1,0 +1,33 @@
+.circle1 {
+  bottom: 0%;
+  left: 0%;
+  animation: circle-1 30s linear infinite alternate;
+}
+.circle2 {
+  animation: circle-2 20s linear infinite alternate 1s;
+  top: 0%;
+  right: 0%;
+}
+.circle3 {
+  top: 0%;
+  left: 0%;
+  animation: circle-3 30s linear infinite alternate 2s;
+}
+@keyframes circle-1 {
+  100% {
+    bottom: 100%;
+    left: 60%;
+  }
+}
+@keyframes circle-2 {
+  100% {
+    right: 50%;
+    top: 70%;
+  }
+}
+@keyframes circle-3 {
+  100% {
+    top: 40%;
+    left: 60%;
+  }
+}
