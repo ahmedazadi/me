@@ -54,6 +54,9 @@ body {
 }
 
 /* navigation */
+.nav-background {
+  display: none;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -70,9 +73,10 @@ body {
   color: var(--blue-color);
 }
 
-.burger-menu {
-  /* don't show menu button in large screens */
+.nav-button {
+  /* don't show nav button in large screens */
   display: none;
+  color: var(--blue-color);
 }
 
 .navigation {
